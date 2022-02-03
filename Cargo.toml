@@ -1,0 +1,16 @@
+[package]
+name = "bevy-tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#exclude = ["assets/**/*"]
+
+[profile.dev]
+incremental = true
+
+[dependencies]
+anyhow = "1.0.52"
+bevy = { version = "0.6.0", features = ["dynamic"] }
+bevy_prototype_lyon = "0.4.0"
+lyon_algorithms = "0.17.7"
